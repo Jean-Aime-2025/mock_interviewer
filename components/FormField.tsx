@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 import {
   FormControl,
@@ -17,7 +16,7 @@ interface FormFieldProps<T extends FieldValues> {
   type?: 'text' | 'email' | 'password' | 'file';
 }
 
-const FormField = ({
+const FormField = <T extends FieldValues>({
   name,
   control,
   label,
